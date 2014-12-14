@@ -1,20 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &100000
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 400000}
-  m_Layer: 0
-  m_Name: mapTile
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,17 +17,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &400000
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400002}
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -50,10 +24,9 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.39395714, y: 2.34388757, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 400000}
+  m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -66,36 +39,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 949175f4c4729de4793ef1889e192484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spritesStart:
+  sprites:
   - {fileID: 21300000, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
   - {fileID: 21300002, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
   - {fileID: 21300004, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  spritesPuzzle:
-  - {fileID: 21300006, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300008, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300010, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  spritesCombat:
-  - {fileID: 21300012, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300014, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300016, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  spritesSocial:
-  - {fileID: 21300018, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300020, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300022, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  spritesTrap:
-  - {fileID: 21300024, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300026, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300028, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  spritesShop:
-  - {fileID: 21300030, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300032, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300034, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  spritesBoss:
-  - {fileID: 21300036, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300038, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300040, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
   index: 0
-  player: {fileID: 11400000, guid: fb685872158ad9d4ea2d6a847db9026e, type: 2}
+  coords: {x: 0, y: 0}
+  player: {fileID: 0}
+  baseText: {fileID: 13200000, guid: c4f601e3311fda54ebd40dbb7d4eddcb, type: 2}
+  font: {fileID: 12800000, guid: 798f2e28797a78341b0634f3d3817684, type: 3}
+  position: {x: 0, y: 0, z: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

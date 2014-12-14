@@ -3,14 +3,7 @@ using System.Collections;
 
 public class map : MonoBehaviour {
 
-	public Sprite[] spritesStart;
-	public Sprite[] spritesPuzzle;
-	public Sprite[] spritesCombat;
-	public Sprite[] spritesSocial;
-	public Sprite[] spritesTrap;
-	public Sprite[] spritesShop;
-	public Sprite[] spritesBoss;
-	private Sprite[] sprites;
+	public Sprite[] sprites;
 	private SpriteRenderer spriteRenderer;
 	public int index = 0;
 	private Vector3 mousePosition;
@@ -18,15 +11,26 @@ public class map : MonoBehaviour {
 	private bool selected = false;
 	public Player player;
 	private bool adjacent = false;
+	public GUIText baseText;
+	private GUIText text;
+	public Font font;
+	public Vector3 position;
+	public string type = "Free";
 
 	// Use this for initialization
 	void Start () {
 		spriteRenderer = renderer as SpriteRenderer;
-		sprites = spritesStart;
+		text = Instantiate (baseText) as GUIText;
+		position = Camera.main.WorldToViewportPoint (transform.position);
+		text.transform.position = Camera.main.WorldToViewportPoint(transform.position);
+		text.text = type;
+		text.font = font;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		text.text = type;
 
 		// adjacent?
 		if ((player.coords - coords).magnitude <= 1.0f) {
@@ -46,7 +50,7 @@ public class map : MonoBehaviour {
 			if (Input.GetMouseButtonDown(0) | selected == true){
 				index = 2;
 				selected = true;
-				if (adjacent == true)
+				if (adjacent == true && type != "empty")
 				{
 					player.Move(coords);
 				}

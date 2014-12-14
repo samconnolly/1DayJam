@@ -3,14 +3,11 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-	public Vector2 coords = Vector2.zero;
+	public Vector2 coords;
 	public Sprite maptile;
 
 	// Use this for initialization
 	void Start () {
-	
-		coords.x = Random.Range (0, 4);
-		coords.y = Random.Range (0, 4);
 
 	}
 	
