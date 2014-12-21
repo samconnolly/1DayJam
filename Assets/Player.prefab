@@ -40,7 +40,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coords: {x: 0, y: 0}
-  maptile: {fileID: 21300000, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
+  maptile: {fileID: 21300000, guid: 17e375d35ad7db548b0e490b0e9ab613, type: 3}
+  map: 1
+  baseText: {fileID: 13200000, guid: c4f601e3311fda54ebd40dbb7d4eddcb, type: 2}
+  font: {fileID: 12800000, guid: 798f2e28797a78341b0634f3d3817684, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -62,7 +65,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_SortingLayerID: 1312464293
-  m_Sprite: {fileID: 21300000, guid: b1a364b516d466742b118943aa57fba6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f59700e932f7b14b8db827fc7e983c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

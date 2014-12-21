@@ -40,15 +40,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300002, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
-  - {fileID: 21300004, guid: ff020b4269540bf4386750bdde11c60a, type: 3}
+  - {fileID: 21300000, guid: 17e375d35ad7db548b0e490b0e9ab613, type: 3}
+  - {fileID: 21300002, guid: 17e375d35ad7db548b0e490b0e9ab613, type: 3}
+  - {fileID: 21300004, guid: 17e375d35ad7db548b0e490b0e9ab613, type: 3}
   index: 0
   coords: {x: 0, y: 0}
-  player: {fileID: 0}
+  player: {fileID: 11400000, guid: fb685872158ad9d4ea2d6a847db9026e, type: 2}
   baseText: {fileID: 13200000, guid: c4f601e3311fda54ebd40dbb7d4eddcb, type: 2}
   font: {fileID: 12800000, guid: 798f2e28797a78341b0634f3d3817684, type: 3}
   position: {x: 0, y: 0, z: 0}
+  type: Free
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
